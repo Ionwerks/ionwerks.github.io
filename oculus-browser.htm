@@ -1,0 +1,20 @@
+<html>
+
+<head>
+	<script>
+	var t = '';
+	function settext(e) {
+		var s = prompt('Text to Persist', t);
+		if (s) t = s;
+	}
+	</script>
+</head>
+
+<body>
+	<h3>Issue with JavaScript 'prompt' in Oculus Browser</h3>
+	<p>In desktop versions of Chrome the expected behaviour is seen in that the last text entered via the prompt is displayed by default the next time the prompt appears.</p>
+	<p>In the Oculus Browser this does not occur. Instead whatever was entered the <i>first</i> time the prompt was shown is always the default text thereafter (parameter for default text is ignored).</p>
+	<button onclick="settext(this);">Enter Text to Persist</button>
+</body>
+
+</html>
